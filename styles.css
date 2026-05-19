@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #071f33;
   color: white;
+  background: #071f33;
 }
 
 /* HERO */
@@ -12,18 +12,24 @@ body {
   display: flex;
   flex-direction: column;
 
-  background: linear-gradient(-45deg, #0a2a43, #0f3a5c, #0b2f4a, #124a6f);
-  background-size: 400% 400%;
-  animation: waterMove 12s ease infinite;
+  background: url("images/Backg2.jpeg") center/cover no-repeat;
 }
 
+/* OVERLAY */
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    rgba(0, 20, 40, 0.2),
-    rgba(0, 10, 25, 0.4)
-  );
+  background: rgba(0, 15, 30, 0.5);
+  z-index: 1;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin: auto;
+  padding: 0 20px;
 }
 
 /* NAV */
@@ -33,6 +39,7 @@ body {
   justify-content: space-between;
   padding: 25px 40px;
   align-items: center;
+  z-index: 2;
 }
 
 .logo img {
@@ -52,14 +59,7 @@ body {
   opacity: 1;
 }
 
-/* HERO CONTENT */
-.hero-content {
-  position: relative;
-  margin: auto;
-  text-align: center;
-  padding: 0 20px;
-}
-
+/* HERO TEXT */
 .hero h1 {
   font-size: 46px;
   margin-bottom: 10px;
@@ -97,7 +97,7 @@ body {
 
 /* SECTIONS */
 .section {
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
 }
 
@@ -128,18 +128,14 @@ body {
   background: none;
   padding: 6px 0;
   margin: 0;
-  border-radius: 0;
 }
 
-/* ========================= */
-/* 🔥 READABILITY UPGRADES   */
-/* ONLY ABOUT / GALLERY / CONTACT */
-/* ========================= */
-
-/* ABOUT */
+/* ABOUT TEXT */
 #about p {
-  font-size: 21px;
-  line-height: 1.8;
+  font-size: 20px;
+  line-height: 1.9;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
 }
 
 /* GALLERY TEXT */
@@ -148,17 +144,17 @@ body {
 }
 
 #gallery p {
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.8;
 }
 
-/* CONTACT */
+/* CONTACT TEXT */
 #contact h2 {
   font-size: 36px;
 }
 
 #contact p {
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.8;
 }
 
@@ -183,7 +179,7 @@ body {
   filter: brightness(1.1);
 }
 
-/* CONTACT */
+/* CONTACT BOX */
 .contact-box {
   max-width: 600px;
   margin: auto;
@@ -197,28 +193,24 @@ footer {
   font-size: 14px;
 }
 
-/* WHATSAPP */
+/* WHATSAPP BUTTON */
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  padding: 15px;
-  border-radius: 50%;
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-}
+  bottom: 25px;
+  left: 25px;   /* moved from right to left */
 
-/* ANIMATION */
-@keyframes waterMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background: #25D366;
+  padding: 22px; /* bigger button */
+  border-radius: 50%;
+
+  color: white;
+  font-size: 26px; /* bigger icon/text */
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: 0.3s ease;
 }
