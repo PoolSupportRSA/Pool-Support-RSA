@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #071f33;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  background: url("images/Backg2.jpeg") center/cover no-repeat;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 15, 30, 0.5);
+  z-index: 1;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* NAV */
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo img {
+  height: 110px;
+}
+
+/* LINKS */
+.nav-links a {
+  margin-left: 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+/* HERO TEXT */
+.hero h1 {
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* BUTTONS */
+.cta-buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 20px;
+  margin: 5px;
+  background: #1b3b5a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.primary {
+  background: #00b4d8;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.dark {
+  background: #081522;
+}
+
+.subtext {
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+/* BULLETS */
+.bullet-list {
+  list-style: disc;
+  padding-left: 40px;
+  margin: 30px auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+.bullet-list li {
+  background: none;
+  padding: 6px 0;
+  margin: 0;
+}
+
+/* ABOUT TEXT */
+#about p {
+  font-size: 20px;
+  line-height: 1.9;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+/* GALLERY TEXT */
+#gallery h2 {
+  font-size: 36px;
+}
+
+#gallery p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* CONTACT TEXT */
+#contact h2 {
+  font-size: 36px;
+}
+
+#contact p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 25px;
+}
+
+/* DEFAULT IMAGE STYLE */
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+/* FIX FOR HEATPUMP2 (SHOW FULL IMAGE) */
+.gallery img[alt="HeatPump 2"] {
+  object-fit: contain;
+  background: #081522;
+}
+
+/* HOVER EFFECT */
+.gallery img:hover {
+  transform: scale(1.04);
+  filter: brightness(1.1);
+}
+
+/* CONTACT BOX */
+.contact-box {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* FOOTER */
+footer {
+  background: #050d14;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+
+  background: #25D366;
+  padding: 22px;
+  border-radius: 50%;
+
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
