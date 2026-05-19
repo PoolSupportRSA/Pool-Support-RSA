@@ -201,28 +201,3 @@ footer {
   font-size: 14px;
 }
 
-/* WHATSAPP BUTTON */
-.whatsapp-float {
-  position: fixed;
-  bottom: 25px;
-  left: 25px;
-
-  background: #25D366;
-  padding: 22px;
-  border-radius: 50%;
-
-  color: white;
-  font-size: 26px;
-  text-decoration: none;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-  transition: 0.3s ease;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.08);
-}
